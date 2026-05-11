@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Project
+data/*.wav
+data/*.mp3
+data/*.mp4
+data/corpus.jsonl
+artifacts/
+*.gguf
+*.safetensors
+
+# Kaggle kernel artifact pulls (results are summarized in writeup + eval_results.json)
+notebooks/**/out/
+notebooks/**/out_*/
+notebooks/**/v2_pull/
+notebooks/**/kaggle_dataset/
+notebooks/**/*.log
+notebooks/auto_run/outputs.json
+notebooks/auto_run/outputs.md
+notebooks/auto_run/extract_outputs.py
+notebooks/auto_run/corpus_stats.json
+notebooks/auto_run/corpus_stats.md
+
+# But keep snapshot eval_results.json — it's the reference table for the writeup.
+!notebooks/auto_run_eval/eval_results.json
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
+*.token

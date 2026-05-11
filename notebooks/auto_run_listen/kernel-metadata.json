@@ -1,0 +1,15 @@
+{
+  "id": "dongwei666/linguaforge-listen",
+  "title": "linguaforge-listen",
+  "code_file": "linguaforge_listen.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["dongwei666/linguaforge-gemma4-204lang-lora"],
+  "kernel_sources": [],
+  "competition_sources": []
+}

@@ -1,0 +1,35 @@
+# Core LLM stack
+transformers>=4.50.0
+accelerate>=0.34.0
+torch>=2.4.0
+sentencepiece>=0.2.0
+
+# Special Technology Track tools (we hit two of them)
+unsloth>=2026.4.0
+# ollama is installed as binary; see scripts/install_ollama.sh
+
+# RAG + Vector store
+llama-index>=0.11.0
+llama-index-vector-stores-chroma>=0.2.0
+chromadb>=0.5.0
+
+# Multimodal & Audio
+pillow>=10.4.0
+librosa>=0.10.2
+soundfile>=0.12.1
+openai-whisper>=20240930
+
+# Frontend / Demo
+gradio>=5.0.0
+fastapi>=0.115.0
+uvicorn>=0.32.0
+
+# Data
+datasets>=3.0.0
+pandas>=2.2.0
+pyyaml>=6.0
+tqdm>=4.66.0
+
+# Utilities
+python-dotenv>=1.0.1
+loguru>=0.7.2
