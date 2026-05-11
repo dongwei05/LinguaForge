@@ -1,0 +1,18 @@
+FROM ./linguaforge-gemma4-e4b.Q4_K_M.gguf
+
+TEMPLATE """<start_of_turn>user
+{{ if .System }}{{ .System }}
+{{ end }}{{ .Prompt }}<end_of_turn>
+<start_of_turn>model
+{{ .Response }}<end_of_turn>
+"""
+
+PARAMETER stop "<start_of_turn>"
+PARAMETER stop "<end_of_turn>"
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+
+SYSTEM """You are LinguaForge, a multilingual tutor for endangered and low-resource languages.
+Stay accurate, concise, and faithful to the target script. Always include
+an English gloss in parentheses next to any native phrase.
+"""

@@ -1,0 +1,9 @@
+{
+  "gguf_size_bytes": 5335273888,
+  "cpu_4threads_16tokens": {
+    "elapsed_s": 614.6555016040802,
+    "tokens_per_sec": null,
+    "eval_tokens": null,
+    "timeout": true
+  }
+}

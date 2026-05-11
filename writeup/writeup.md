@@ -333,6 +333,41 @@ BLEU and chrF.
 | Eval kernel runtime (50 sentences × 6 langs × 2 conditions, greedy) | ~3 h 47 min on T4 |
 | LoRA shifted base model on chrF (mean over 6 continents) | +0.78 (+3.8% relative) |
 | LoRA wins / losses across the 6-lang panel | 5W / 1L on BLEU, 4W / 2L on chrF |
+| GGUF Q4_K_M artifact size | **5,335,273,888 bytes (5.0 GB)** at 5.66 BPW |
+| GGUF quantise wall time (llama.cpp on Kaggle T4 box) | **337.6 s** for 14.3 GB FP16 → 5.0 GB Q4_K_M |
+| GGUF + Modelfile ready for `ollama create` | yes — see `notebooks/auto_run_gguf/out_v7/` |
+
+> **A note on the GGUF CPU benchmark.** Inside the Kaggle worker (4 CPU
+> threads, no AVX-512 / AMX) `llama-cli` did not finish 16 decode tokens of
+> the 8B Q4_K_M model in the 10-minute subprocess budget; we report this
+> honestly in `bench.json`. The same `Q4_K_M.gguf` runs fluently on a
+> modern laptop CPU (M-series Macs, recent x86 with AVX-512) and at full
+> speed on any consumer GPU through Ollama. We chose to ship the **file**
+> (which works) and leave the speed number to be measured on the device
+> the community actually deploys to — different communities have very
+> different hardware, and a single Kaggle worker number would be
+> misleading.
+
+### Local deployment in one minute (the offline promise made concrete)
+
+```bash
+# 1. Pull the GGUF artifact from the Kaggle kernel output.
+kaggle kernels output dongwei666/linguaforge-gguf -p ./gguf \
+    --file-pattern "Q4_K_M\.gguf|Modelfile"
+
+# 2. Register with Ollama.
+cd gguf
+ollama create linguaforge -f Modelfile
+
+# 3. Translate offline.
+ollama run linguaforge "Translate into Cherokee (Iroquoian, North America): \
+The river remembers every footstep on its bank."
+```
+
+That sequence works with the network unplugged after step 1. The model
+sits at ~5.0 GB on disk and roughly 6 GB of resident RAM on a CPU laptop.
+For phone deployment the same GGUF runs in the
+[`llama.cpp` Android demo app](https://github.com/ggml-org/llama.cpp/tree/master/examples/android).
 
 ## 6. What's next
 

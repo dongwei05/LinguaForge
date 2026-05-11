@@ -30,6 +30,15 @@ notebooks/auto_run/corpus_stats.md
 
 # But keep snapshot eval_results.json — it's the reference table for the writeup.
 !notebooks/auto_run_eval/eval_results.json
+# Keep the GGUF v7 deliverables that fit in git (Modelfile + bench.json — the
+# 5 GB .gguf itself stays on Kaggle, downloadable via the kernel API).
+!notebooks/auto_run_gguf/out_v7/
+!notebooks/auto_run_gguf/out_v7/gguf/
+!notebooks/auto_run_gguf/out_v7/gguf/Modelfile
+!notebooks/auto_run_gguf/out_v7/gguf/bench.json
+# Keep the Listen kernel results JSON for the writeup reference.
+!notebooks/auto_run_listen/out_v3/
+!notebooks/auto_run_listen/out_v3/listen_results.json
 
 # IDE
 .vscode/
