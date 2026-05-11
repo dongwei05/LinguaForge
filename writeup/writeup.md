@@ -70,6 +70,36 @@ Gemma 4's **strict JSON output** plus its 140-language pre-training made the
 card-extraction prompt converge in two iterations. The full prompt is in
 `src/listen.py`.
 
+**Reproducible Listen run on a real Cherokee recording.** To prove the
+pipeline is not a slide deck, we ran the kernel
+[`dongwei666/linguaforge-listen`](https://www.kaggle.com/code/dongwei666/linguaforge-listen)
+on the Wikimedia Commons file `Morning-song-on-Cherokee (1).opus`
+(43 s, uploaded by user **Bono.Ruma**, 22 June 2024, **CC-BY-SA 4.0**),
+resampled to 16 kHz mono and fed to Gemma 4 E4B's multimodal processor.
+Saved in `notebooks/auto_run_listen/out_v3/listen_results.json`. Honest
+side-by-side excerpt:
+
+> **Base Gemma 4 E4B (no LoRA):** *"I am sorry, but I cannot identify the
+> language or musical style from the provided audio clip. However, if this
+> is indeed a Cherokee morning song, here are three vocabulary cards based
+> on the general themes…"* Falls back to clean, well-formed Cherokee cards
+> (`ᎣᏏᏲ` / *osiyo* / hello, etc.) with cultural notes — the **graceful-refusal
+> behaviour we want from a tutor**.
+>
+> **+ LinguaForge LoRA:** confidently identifies the audio as Cherokee
+> morning-song and produces a strong analysis of intonation, rhythm, and
+> vowel inventory — but then enters a syllabary repetition loop on the
+> vocabulary cards. Same failure mode the eval kernel surfaces for Yoruba
+> long-form generation. This tells us the next intervention should be
+> **per-community LoRAs** that fine-tune on tens of thousands of native
+> sentences each (rather than 80 across 203 languages), and we report it
+> here rather than burying it.
+
+The takeaway is **not** that LoRA-on is universally better than base;
+it is that the *combination* (LoRA-on for audio analysis, base for
+careful card generation, deterministic decoding everywhere) is what gives
+a community a useful, honest, reproducible Listen pillar.
+
 ### 📚 Learn — A patient tutor that never hallucinates
 
 When we asked the tutor "Teach me a Cherokee greeting", here is the **exact
@@ -336,7 +366,9 @@ We are explicitly **not** trying to build a closed product. The whole point is t
 - **Models**: `linguaforge-cherokee:4b` and `linguaforge-hakka:4b` on Ollama Hub
 - **Training auto-run kernel**: <https://www.kaggle.com/code/dongwei666/linguaforge-auto> (one-button reproducer; ~5 h 9 min on a free T4)
 - **Evaluation auto-run kernel**: <https://www.kaggle.com/code/dongwei666/linguaforge-eval> (held-out FLORES-200 + ChrEn BLEU/chrF panel; ~3 h 47 min on a free T4)
-- **Trained 204-language LoRA**: `notebooks/auto_run/out_v8_adapter/lora_out/adapter_model.safetensors` (169.7 MB, output of kernel v8 — covers every FLORES-200 language + Cherokee from ChrEn), also mirrored as Kaggle dataset `dongwei666/linguaforge-gemma4-204lang-lora` and consumed by the eval kernel above
+- **Listen pillar auto-run kernel**: <https://www.kaggle.com/code/dongwei666/linguaforge-listen> (Wikimedia Commons Cherokee Morning Song → Gemma 4 multimodal audio understanding, base vs +LoRA)
+- **GGUF Q4_K_M export kernel**: <https://www.kaggle.com/code/dongwei666/linguaforge-gguf> (merge LoRA → llama.cpp convert → Q4_K_M quantize → CPU benchmark + Ollama Modelfile)
+- **Trained 204-language LoRA**: `notebooks/auto_run/out_v8_adapter/lora_out/adapter_model.safetensors` (169.7 MB, output of kernel v8 — covers every FLORES-200 language + Cherokee from ChrEn), also mirrored as Kaggle dataset `dongwei666/linguaforge-gemma4-204lang-lora` (and, after Space deploy, as HF model `zcgf111/linguaforge-gemma4-204lang-lora`).
 
 ## 8. Acknowledgments
 
@@ -355,6 +387,11 @@ We are explicitly **not** trying to build a closed product. The whole point is t
   shaped the Listen and Learn pillars.
 - **Hakka heritage school in Meizhou** — for letting us listen to a
   grandmother who is the entire reason this project exists.
+- **Bono.Ruma (Wikimedia Commons)** — for releasing the 43-second
+  *Morning Song of Cherokee* recording under CC-BY-SA 4.0
+  (`commons.wikimedia.org/wiki/File:Morning-song-on-Cherokee_(1).opus`).
+  It is the actual audio used in our Listen kernel and in the pitch video's
+  cold open.
 
 ---
 

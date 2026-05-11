@@ -14,6 +14,7 @@ data/corpus.jsonl
 artifacts/
 *.gguf
 *.safetensors
+merged_fp16/
 
 # Kaggle kernel artifact pulls (results are summarized in writeup + eval_results.json)
 notebooks/**/out/
