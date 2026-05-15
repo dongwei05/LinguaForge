@@ -395,15 +395,16 @@ We are explicitly **not** trying to build a closed product. The whole point is t
 
 ## 7. Assets
 
-- **Code**: this repository (MIT) → `src/`, `demo/`, `notebooks/`
-- **Live demo**: <Hugging Face Space link to be inserted at submission time>
-- **Video** (3 min): `<YouTube link to be inserted>`
-- **Models**: `linguaforge-cherokee:4b` and `linguaforge-hakka:4b` on Ollama Hub
+- **Code (MIT)**: <https://github.com/dongwei05/LinguaForge> — full reproducible source: `src/`, `demo/`, `notebooks/`, `space/`, `scripts/`, `writeup/`
+- **Live demo (HF Space, ZeroGPU)**: <https://huggingface.co/spaces/zcgf111/LinguaForge> — base Gemma 4 vs LinguaForge LoRA, side-by-side, 16 showcase languages
+- **Trained 204-language LoRA (HF Hub)**: <https://huggingface.co/zcgf111/linguaforge-gemma4-204lang-lora> — 169.7 MB, r=16, α=32, every FLORES-200 language + Cherokee
+- **Trained LoRA (Kaggle mirror)**: <https://www.kaggle.com/datasets/dongwei666/linguaforge-gemma4-204lang-lora>
+- **Video** (3 min): `<YouTube link to be inserted at submission time>`
+- **Models**: `linguaforge-cherokee:4b` and `linguaforge-hakka:4b` on Ollama Hub (Modelfile shipped in `notebooks/auto_run_gguf/`)
 - **Training auto-run kernel**: <https://www.kaggle.com/code/dongwei666/linguaforge-auto> (one-button reproducer; ~5 h 9 min on a free T4)
 - **Evaluation auto-run kernel**: <https://www.kaggle.com/code/dongwei666/linguaforge-eval> (held-out FLORES-200 + ChrEn BLEU/chrF panel; ~3 h 47 min on a free T4)
 - **Listen pillar auto-run kernel**: <https://www.kaggle.com/code/dongwei666/linguaforge-listen> (Wikimedia Commons Cherokee Morning Song → Gemma 4 multimodal audio understanding, base vs +LoRA)
 - **GGUF Q4_K_M export kernel**: <https://www.kaggle.com/code/dongwei666/linguaforge-gguf> (merge LoRA → llama.cpp convert → Q4_K_M quantize → CPU benchmark + Ollama Modelfile)
-- **Trained 204-language LoRA**: `notebooks/auto_run/out_v8_adapter/lora_out/adapter_model.safetensors` (169.7 MB, output of kernel v8 — covers every FLORES-200 language + Cherokee from ChrEn), also mirrored as Kaggle dataset `dongwei666/linguaforge-gemma4-204lang-lora` (and, after Space deploy, as HF model `zcgf111/linguaforge-gemma4-204lang-lora`).
 
 ## 8. Acknowledgments
 

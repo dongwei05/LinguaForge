@@ -119,12 +119,16 @@ showcase dict; no code changes needed.
 
 ## What's submitted
 
-- **Public code repo**: this directory (MIT licence)
-- **Trained LoRA adapter (169.7 MB)**: HF Hub `zcgf111/linguaforge-gemma4-204lang-lora` + Kaggle dataset `dongwei666/linguaforge-gemma4-204lang-lora`
-- **Live demo (Gradio + ZeroGPU)**: HF Space `zcgf111/LinguaForge` — base vs +LoRA side-by-side translation, multi-turn tutor chat, eval numbers tab
+- **Public code repo**: <https://github.com/dongwei05/LinguaForge> (MIT)
+- **Trained LoRA adapter (169.7 MB)**: <https://huggingface.co/zcgf111/linguaforge-gemma4-204lang-lora> (HF Hub) · Kaggle mirror: <https://www.kaggle.com/datasets/dongwei666/linguaforge-gemma4-204lang-lora>
+- **Live demo (Gradio + ZeroGPU)**: <https://huggingface.co/spaces/zcgf111/LinguaForge> — base vs +LoRA side-by-side translation, multi-turn tutor chat, eval numbers tab
 - **3-min pitch video**: YouTube unlisted (URL added at submission time)
 - **Kaggle writeup**: `writeup/writeup.md` (pasted into Kaggle UI)
-- **4 reproducer Kaggle kernels**: `linguaforge-auto` (training, 5 h 9 min), `linguaforge-eval` (BLEU+chrF, 3 h 47 min), `linguaforge-listen` (multimodal audio), `linguaforge-gguf` (Q4_K_M export + bench)
+- **4 reproducer Kaggle kernels**:
+  - Training: <https://www.kaggle.com/code/dongwei666/linguaforge-auto> (~5 h 9 min)
+  - Eval: <https://www.kaggle.com/code/dongwei666/linguaforge-eval> (~3 h 47 min)
+  - Listen: <https://www.kaggle.com/code/dongwei666/linguaforge-listen>
+  - GGUF: <https://www.kaggle.com/code/dongwei666/linguaforge-gguf>
 
 ## Tracks targeted
 
