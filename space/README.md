@@ -8,7 +8,7 @@ sdk_version: 4.44.1
 app_file: app.py
 pinned: true
 license: apache-2.0
-short_description: Base Gemma 4 E4B vs. LinguaForge LoRA side by side on 16 endangered languages.
+short_description: Base Gemma 4 vs LinguaForge LoRA on 204 languages
 models:
   - google/gemma-4-E4B-it
   - zcgf111/linguaforge-gemma4-204lang-lora

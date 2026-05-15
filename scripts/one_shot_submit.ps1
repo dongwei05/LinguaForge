@@ -11,6 +11,7 @@ param(
 
 if (-not $HfToken) { throw "HF_TOKEN_WRITE not set" }
 if (-not $GhRepoName) { $GhRepoName = "LinguaForge" }
+if (-not $env:GH_USER) { $env:GH_USER = (gh api user --jq .login 2>$null) }
 
 $env:HF_TOKEN = $HfToken
 $env:PYTHONUTF8 = "1"
