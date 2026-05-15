@@ -121,7 +121,7 @@ showcase dict; no code changes needed.
 
 - **Public code repo**: <https://github.com/dongwei05/LinguaForge> (MIT)
 - **Trained LoRA adapter (169.7 MB)**: <https://huggingface.co/zcgf111/linguaforge-gemma4-204lang-lora> (HF Hub) · Kaggle mirror: <https://www.kaggle.com/datasets/dongwei666/linguaforge-gemma4-204lang-lora>
-- **Live demo (Gradio + ZeroGPU)**: <https://huggingface.co/spaces/zcgf111/LinguaForge> — base vs +LoRA side-by-side translation, multi-turn tutor chat, eval numbers tab
+- **Live Space (static showcase)**: <https://huggingface.co/spaces/zcgf111/LinguaForge> — interactive viewer over every real held-out output (6 langs × 3 samples) + Listen pillar audio results. Loads instantly on free CPU; live inference reproducible from the eval kernel below.
 - **3-min pitch video**: YouTube unlisted (URL added at submission time)
 - **Kaggle writeup**: `writeup/writeup.md` (pasted into Kaggle UI)
 - **4 reproducer Kaggle kernels**:

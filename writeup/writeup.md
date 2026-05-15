@@ -396,7 +396,7 @@ We are explicitly **not** trying to build a closed product. The whole point is t
 ## 7. Assets
 
 - **Code (MIT)**: <https://github.com/dongwei05/LinguaForge> — full reproducible source: `src/`, `demo/`, `notebooks/`, `space/`, `scripts/`, `writeup/`
-- **Live demo (HF Space, ZeroGPU)**: <https://huggingface.co/spaces/zcgf111/LinguaForge> — base Gemma 4 vs LinguaForge LoRA, side-by-side, 16 showcase languages
+- **Live Space (static showcase, free CPU)**: <https://huggingface.co/spaces/zcgf111/LinguaForge> — interactive browser of every real held-out output the model produced, in 6 languages, with 3 samples each, plus the multimodal Listen pillar; loads instantly. (Live inference is intentionally not bundled here: Gemma 4 E4B + LoRA needs ~5 GB GPU RAM and HF ZeroGPU is paid-only; reproducing inference is one click on the eval kernel below.)
 - **Trained 204-language LoRA (HF Hub)**: <https://huggingface.co/zcgf111/linguaforge-gemma4-204lang-lora> — 169.7 MB, r=16, α=32, every FLORES-200 language + Cherokee
 - **Trained LoRA (Kaggle mirror)**: <https://www.kaggle.com/datasets/dongwei666/linguaforge-gemma4-204lang-lora>
 - **Video** (3 min): `<YouTube link to be inserted at submission time>`
