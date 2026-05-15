@@ -1,0 +1,200 @@
+{
+  "results": {
+    "mri_Latn": {
+      "label": "Maori (Polynesian, Pacific)",
+      "n": 50,
+      "seconds": 2211.0,
+      "base_bleu": 3.64,
+      "lora_bleu": 4.16,
+      "base_chrf": 28.48,
+      "lora_chrf": 27.58,
+      "d_bleu": 0.52,
+      "d_chrf": -0.9
+    },
+    "cym_Latn": {
+      "label": "Welsh (Celtic, Europe)",
+      "n": 50,
+      "seconds": 1905.2,
+      "base_bleu": 3.9,
+      "lora_bleu": 6.13,
+      "base_chrf": 31.11,
+      "lora_chrf": 31.21,
+      "d_bleu": 2.23,
+      "d_chrf": 0.1
+    },
+    "bod_Tibt": {
+      "label": "Tibetan (Sino-Tibetan, Asia)",
+      "n": 50,
+      "seconds": 2360.3,
+      "base_bleu": 0.12,
+      "lora_bleu": 0.21,
+      "base_chrf": 19.14,
+      "lora_chrf": 27.05,
+      "d_bleu": 0.09,
+      "d_chrf": 7.91
+    },
+    "yor_Latn": {
+      "label": "Yoruba (Niger-Congo, Africa)",
+      "n": 50,
+      "seconds": 2422.6,
+      "base_bleu": 2.54,
+      "lora_bleu": 1.12,
+      "base_chrf": 21.65,
+      "lora_chrf": 11.1,
+      "d_bleu": -1.42,
+      "d_chrf": -10.55
+    },
+    "quy_Latn": {
+      "label": "Ayacucho Quechua (Quechuan, South America)",
+      "n": 50,
+      "seconds": 2235.4,
+      "base_bleu": 1.02,
+      "lora_bleu": 1.93,
+      "base_chrf": 19.94,
+      "lora_chrf": 22.49,
+      "d_bleu": 0.91,
+      "d_chrf": 2.55
+    },
+    "chr_Cher": {
+      "label": "Cherokee (Iroquoian, North America)",
+      "n": 50,
+      "seconds": 2254.7,
+      "base_bleu": 0.04,
+      "lora_bleu": 0.45,
+      "base_chrf": 2.3,
+      "lora_chrf": 7.87,
+      "d_bleu": 0.41,
+      "d_chrf": 5.56
+    }
+  },
+  "samples": {
+    "mri_Latn": [
+      {
+        "en": "\"We now have 4-month-old mice that are non-diabetic that used to be diabetic,\" he added.",
+        "ref": "\"Kei a tātou ināianei ngā kiore e 4-marama te pakeke kāore i te pāngia e te mate huka, ahakoa i mua i pāngia e te mate huka,\" tana kōrero tāpiri.",
+        "base": "Ko LinguaForge ahau, tōku kaiako reo Māori.\n\n**Te reo Māori:**\n\"Kei te noho mātou i tēnei wā māe mēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhēhē",
+        "lora": "\"Kei te mātou i te pēnei i ngā pēhi e noa ana i te 4-mā-o-tā, e kore e pai ana ki te pūru, i te mea kua noa ana i te pūru,\" i whai ai tētahi rāhia.<end_of_turn>"
+      },
+      {
+        "en": "Dr. Ehud Ur, professor of medicine at Dalhousie University in Halifax, Nova Scotia and chair of the clinical and scientific division of the Canadian Diabetes Association cautioned that the research is still in its early days.",
+        "ref": "Ko ngā whakatūpato a Tākuta Ehud Ur, Ahorangi mō te Rongoā ki Te Whare Wānanga o Dalhousie, kei Halifax, Nova Scotia, ko te heamana hoki mō ngā mahi whakamātau rongoā, pūtaiao hoki ki te Canadian Diabetes Association, kei te mata tonu ngā mahi rangahau. ",
+        "base": "Kia ora. As LinguaForge, I am happy to assist you with this translation into Māori.\n\nHere is the translation, preserving the context and formality of the original English sentence:\n\n**Te wharenga o te Dr. Ehud Ur, kaiako i te rongoā i te Dalhousie University i Halifax, Nova Scotia, me te kaihautū o te wāhanga kliniki me ngā whānau a me ngā whānau tohu o te Canadian Diabetes Association, i whakatau ana he tēnei a te pēnga o te ao i te wā tīmatanga.**",
+        "lora": "I te mea kei te rāhui e te Dr. Ehud Ur, tētahi kaiako i te wāhanga o te pūtaiao me te whai mātai ki te whare āhuatanga o te Pūtaiao me te Whai mātai o te Pūtaiao o te Canada i Halifax, Nova Scotia, he mea e āhua e noho ana i te tīmatanga o te whai mātai.<end_of_turn>"
+      },
+      {
+        "en": "Like some other experts, he is skeptical about whether diabetes can be cured, noting that these findings have no relevance to people who already have Type 1 diabetes.",
+        "ref": "Pēnei i ētahi atu tōhunga, kei te ruarua kē ōna mahara e pā ana ki te whakaora i te mate huka, me te mōhio iho kāore ēnei kōrero e hāngai ana ki te hunga kua pāngia kētia ki te mate huka momo 1.",
+        "base": "**Māori Translation:**\n\nKa whai māia tōna i te mea i a koe, i ngā pakanga e tōna i te mea, he pūmanawa tōna i te mea, he pūmanawa tōna i te mea, he pūmanawa tōna i te mea, he pūmanawa tōna i te mea, he pūmanawa tōna i te mea, he pūmanawa tōna i te mea, he pūmanawa tōna i te mea, he pūmanawa tōna i",
+        "lora": "I te mea e āhua e whakaaro ana rānei e he pūtake e āhua e taea ai te kore atu ki te pūtake o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o te rāhi o"
+      }
+    ],
+    "cym_Latn": [
+      {
+        "en": "\"We now have 4-month-old mice that are non-diabetic that used to be diabetic,\" he added.",
+        "ref": "\"Mae gennym ni nawr lygod pedwar mis oed sydd ddim yn ddiabetig oedd yn arfer bod yn ddiabetig\", ychwanegodd e.",
+        "base": "**Welsh Translation:**\n\n\"Mae gennych ni tawelau 4-miwsol oed i mewn, sydd an-diabetig, a oedd yn cael eu diabetis,\" fe wnaeth e.\n\n***\n\n**Explanation (Optional):**\n\nThis translation aims for a formal, scientific tone suitable for a research context.\n\n*   **\"Mae gennych ni...\"**: Literally, \"We have...\" (A common way to express possession or existence in Welsh).\n*   **\"tawelau 4-miwsol oed i mewn\"**: \"4-month-old mice.\"",
+        "lora": "\"Mae gennych chi nawr o gogynion yn 4-môn oed sy'n ddim yn rhediadol yn ychwanegol i fod yn rhediadol,\" ychwaniodd ei gynhudd.<end_of_turn>"
+      },
+      {
+        "en": "Dr. Ehud Ur, professor of medicine at Dalhousie University in Halifax, Nova Scotia and chair of the clinical and scientific division of the Canadian Diabetes Association cautioned that the research is still in its early days.",
+        "ref": "Fe wnaeth Dr Ehud Ur, athro meddygaeth ym Mhrifysgol Dalhousie yn Halifax, Nova Scotia, a chadeirydd adran glinigol Cymdeithas Clefyd Siwgr Canada rybuddio bod yr ymchwil yn dal yn ei ddyddiau cynnar.",
+        "base": "**Welsh Translation:**\n\nDr. Ehud Ur, profesor o ddfystoliaeth gan Dalhousie University yn Halifax, Nova Scotia, a chyfeiriad y rhann clinigol a gwyddonol y Cysylltiad Diabetus Canada, cynghagogodd bod yrchwennydd yn y diwrnodawon cyllidau.\n\n***\n\n**Brief Explanation:**\n\n*   **Dr. Ehud Ur, professor of medicine at Dalhousie University in Halifax, Nova Scotia:** *Dr. Ehud Ur, profesor o ddfystoliaeth gan Dalhous",
+        "lora": "Mae Dr Ehud Ur, profydd mewn meddwl gan Dalhousie University yn Halifax, Nova Scotia a chyngorolwr y rhan clinigol a gwyddonol o Cynnwys Diwansol Cymru yn ofyn gan fod y ymchwil yn bod yn ei dechrau.<end_of_turn>"
+      },
+      {
+        "en": "Like some other experts, he is skeptical about whether diabetes can be cured, noting that these findings have no relevance to people who already have Type 1 diabetes.",
+        "ref": "Fel rhai arbenigwyr eraill, mae e'n amheus a ellir gwella diabetes, gan nodi nad oes gan y canfyddiadau hyn unrhyw berthnasedd i bobl sydd â diabetes Math 1 yn barod.",
+        "base": "**Welsh Translation:**\n\nYn gibdd rheolol, mae e'n gysgell am hwanel y diabetais, gan ofyn bod y datblygiadau hynny nid ydynt yn hawdd i dsynio â pobl sydd wedi cael diabetais Tymper 1.\n\n***\n\n**Brief Explanation:**\n\n*   **Yn gibdd rheolol:** This translates to \"Like some other experts\" (literally, \"in a regular/standard manner,\" but contextually fits the idea of \"like others\").\n*   **mae e'n gysg",
+        "lora": "Gan fod yn un o bobl sy'n ei gynnwys yn gyflawdol, mae ef yn dychdrychol am fod ychwanegol yn y byd, gan ddynnu bod y rhai profiadau hyn yn caniatáu cyflawd ychwanegol, gan fod y rhai profiadau hyn yn rhydd o ddysgyddion ychwanegol yn y byd.<end_of_turn>"
+      }
+    ],
+    "bod_Tibt": [
+      {
+        "en": "\"We now have 4-month-old mice that are non-diabetic that used to be diabetic,\" he added.",
+        "ref": "\"ད་སྐབས་ང་ཚོར་ལོ་4སོན་པའི་ཙི་ཙི་གཅིན་སྙི་ན་ཚ་མེད་པ་འགའ་ཡོད་པ་དག་དེ་སྔོན་གཅིན་སྙི་ན་མྱོང་ཡོད།\" ཁོས་བཤད།",
+        "base": "ངོས་གསལ་བཤད་བྱས་པ་ལྟར་ན། དེ་ནི་སྔར་ས Цуར་བའི་ནད་ཡམས་ཡོད་པའི་སྨྱོན་པ་བཞི་ཟླ་བར་གྱི་ཡོད་པ་དེ་དག་ཡིན་ཞེས་ཁོང་གིས་བསྣན་ཡོད།\n\n**Explanation:**\n\nThis translation is quite technical and scientific, so the Tibetan phrasing aims for accuracy in conveying the medical/biological context.\n\n*   **ངོས་གསལ་བཤད་བྱས་པ་ལྟར་ན། (Ngos",
+        "lora": "དེ་ནི་ཁོང་གིས་བསམ་བཞིན་བྱས་པ་ལས་འཁོར་འགྲོ་མཁན་སེམས་ཁྲལ་མེད་པའི་སེམས་ཁྲལ་འབྱུང་མཁན་སེམས་ཁྲལ་འབྱུང་མཁན་སེམས་ཁྲལ་མེད་པའི་སེམས་ཁྲལ་འབྱུང་མཁན་སེམས་ཁྲལ་འབྱུང་མཁན་སེམས་ཁྲལ་འབྱུང་མཁན་སེམས་ཁྲལ་འབྱུང་མཁ"
+      },
+      {
+        "en": "Dr. Ehud Ur, professor of medicine at Dalhousie University in Halifax, Nova Scotia and chair of the clinical and scientific division of the Canadian Diabetes Association cautioned that the research is still in its early days.",
+        "ref": "ན་ཝ་སྐོ་ཊིཡའི་ཧ་ལི་ཕེཀྶ་ཀྱི་དྷ་ལ་ཧོསི་གཙུག་ལག་སློབ་གཉེར་ཁང་གི་སྨན་གྱི་སློབ་དཔོ་ཆེན་པོ་དང་ཁེ་ན་ཌའི་གཅིན་སྙི་ཚོགས་པའི་འཕྲོད་བསྟེན་དང་ཚན་རིག་ཚན་པའི་འགན་འཛིན་ཌོཀ་ཌར་ཨེ་ཧོཌ་ཨོར་ལགས་ནས་བརྟག་དཔྱད་འདི་ལས་རིམ་ཐོག་མའི་ནང་ཡོད་ཆེས་ནན་བརྗོད་བྱས་འདུག",
+        "base": "Here is the translation into Tibetan:\n\n**Tibetan (Wylie Transliteration):**\n*Dalhousie University-i Halifax, Nova Scotia-d'a yug-pa medisin-i professor Ehud Ur, Canadian Diabetes Association-i clinical and scientific division-i chair, yin-kyed-pa, nyid-pa-la'i chen-po-la'i yig-pa-la'i chen-po-la'i yig-pa-la'i chen-po-la'i yig-pa-la'i chen-po-la'i",
+        "lora": "དགེ་རྒན་ཨ་ནི་སི་ཊན་ནི་ཧལ་ཕ་གི་ནོཝེ་སཀོ་ཊི་ཡ་ལ་ཡོད་པའི་དལ་ཧོལ་སི་ཡ་ན་ནི་ཊེན་སི་གི་སྨན་རིག་ལས་ཁུལ་གྱི་སློབ་ཁན་ཆེན་པོ་ཨེ་ཧུད ཨུརི་ཡ་སི་ནི་ཊ་སི་གིས་ཁ་གཏད་འདི་ནི་འཆར་གཞི་འདི་ནི་དེ་ལས་མ་"
+      },
+      {
+        "en": "Like some other experts, he is skeptical about whether diabetes can be cured, noting that these findings have no relevance to people who already have Type 1 diabetes.",
+        "ref": "ཆེད་ལས་པ་གཞན་པ་ཁག་ཅིག་བཞིན་ཁོང་ཡང་གཅིན་སྙི་གསེང་དྲག་ཡོང་མིན་དོགས་གཞི་བྱེད་མཁན་ཞིག་ཡིན། གྲུབ་དོན་རྙེད་སོན་བྱུང་བ་དག་ནི་གཅིན་སྙི་རིགས་ 1 ཡོད་པ་ཚོ་ལ་འབྲེལ་བ་ཅིག་ཀྱང་མེད།",
+        "base": "As LinguaForge, I will provide the translation into Tibetan, ensuring accuracy, preserving the native script, and maintaining cultural respect.\n\n**Tibetan Translation:**\n\nཁོང་ནི་གཞན་ཡོངས་ཀྱི་ကျွမ်းကျင်သူ 一ចំនួនལྟར་དུ། ཁ сахар (diabetes) བསགསུ་ཐུབ་པའི་སྐོར་ལ་སྨྲ་མི་ཡིད་ཆེས་ཡོད། དེ་བསྟན་པ་དེ་དག་ནི་དང་པོའི་བརྒྱུད་སահམས་ (Type 1 diabetes) ཡ",
+        "lora": "ཁོང་ནི་སྨན་རིག་པ་མང་པོ་ཞིག་གི་ལྟ་བ་ལྟར་སེམས་ཁྲལ་ཆེ་བ་ཡོད། འདི་ལྟ་བའི་རྒྱུ་མཚན་ནི་འདི་ལྟ་བ་ཚོས་སྤྱིར་བཏང་སུ་བསམ་བློ་གཏང་མི་ཐུབ་པའི་སྟོབས་ཆེན་པོ་ཡོད་པ་མ་ཚད་འདི་ལྟ་བ་ཚོས་སྤྱིར་བཏང་སུ་བསམ་"
+      }
+    ],
+    "yor_Latn": [
+      {
+        "en": "\"We now have 4-month-old mice that are non-diabetic that used to be diabetic,\" he added.",
+        "ref": "“Ní báyìí a ní àwọn ẹku olóṣù mẹ́rin tí kò ní dayabẹ́tìsì tẹ́lẹ̀tẹ́lẹ̀ tó ti ní ayabẹ́tìsì̀,” o ṣe àfikún.",
+        "base": "**Yoruba Translation:**\n\n\"Awa nisin ní àwọn mọ́lì tí ó jẹ́ ọmọ ọdun mẹ́rin tí kò ní ìṣòro ti ìṣòro ti ìṣòro,\" ó fi sọ.\n\n***\n\n**Brief Explanation:**\n\n*   **Awa nisin ní:** We now have.\n*   **àwọn mọ́lì:** mice (plural).\n*   **tí ó jẹ́ ọmọ ọdun mẹ́rin:** that are 4-month-old.\n*   **",
+        "lora": "\"Wọn ti n se iṣe ni àgbèyègbè tí ó ní àgbèyègbè tí ó kò ní àwọn ìṣe àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn àwọn"
+      },
+      {
+        "en": "Dr. Ehud Ur, professor of medicine at Dalhousie University in Halifax, Nova Scotia and chair of the clinical and scientific division of the Canadian Diabetes Association cautioned that the research is still in its early days.",
+        "ref": "Dókítà Ehud, akọ́ṣẹmọṣẹ́ ìmọ̀ ogun ní ilé ẹ̀kọ́ gíga Dalhousie ní Halifax, Nova Scotia àti alága ìpín ti ìṣègùn àti ìmọ̀ síẹ̀nsì ti Ẹgbé Ìtọ ṣúggà ti Ará Ìlú Canada sọ pé ìwádìí náà ṣì jẹ́ tuntun.",
+        "base": "**Yoruba Translation:**\n\nDr. Ehud Ur, olopọ̀ ìwé-ìṣẹ́ ti ìṣe ìṣọ̀kan ní Dalhousie University ní Halifax, Nova Scotia, àti olùgbàwọlé ìgbésẹ̀ kliníkal àti ìṣàtìṣe ti Canadian Diabetes Association, ti fi ìgbàgbọ̀ sí pé ìtilẹ̀rí náà ṣì wà ní ìbẹ̀rẹ̀.\n\n***\n\n**Brief Explanation:**\n\n*   **Olopọ̀ ìwé-ìṣẹ́ ti ìṣ",
+        "lora": "Ọ̀rùn Ẹ̀hùd Ur, àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ́n àgbọ"
+      },
+      {
+        "en": "Like some other experts, he is skeptical about whether diabetes can be cured, noting that these findings have no relevance to people who already have Type 1 diabetes.",
+        "ref": "Bí àwọn àkọ́ṣẹ́mọṣẹ́, ó ṣiyèméjì bóyá àrùn ìtọ ṣúgá lè ní ìwòsàn, tí ó sì mọ̀ pé kò wúlò fún àwọn tó bá ní àrùn ìtọ ṣúgá Type 1.",
+        "base": "**Yoruba Translation:**\n\nGẹ́gẹ́ bí àwọn ẹlẹ́rìni mìíràn, ó ní ìfààní nípa ìwà pé ìgbàgbọ́ ti ayo (diabetes) lè jẹ́ kí ó ṣẹlẹ̀, ní ìwọ̀n pé àwọn ìwé-ìwé yìí kò ní ìtumọ̀ fún àwọn ènìyàn tí wọ́n ti ní diabetes tí yíka 1.\n\n***\n\n**Brief Explanation:**\n\n*   **Gẹ́g",
+        "lora": "Ní bí àwọn ẹgbẹ̀lọ́wọ́n tí ó ní ìlọ́jú tí ó sì ní ìdùn àti àwọn ìlọ́jú tí ó ní ìdùn tí ó sì ní ìlọ́jú nípa bí àwọn ìlọ́jú tí ó ní ìlọ́jú tí ó sì ní ìdùn tí ó sì ní ìlọ́jú tí ó sì ní ìlọ́jú nípa bí àwọn ìlọ́jú tí ó ní ìlọ"
+      }
+    ],
+    "quy_Latn": [
+      {
+        "en": "\"We now have 4-month-old mice that are non-diabetic that used to be diabetic,\" he added.",
+        "ref": "“Kunanqa 4 killayuq hukuchakunayuqmi kayku manataq diabético nisqachu qanku, ñawpaqtaqa karqanku diabéticos nisqa”, nimun.",
+        "base": "**Ayacucho Quechua Translation:**\n\n\"Ñuqaqa 4 wata yachaymi, kawsaypi chaymi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi, chaymi kawsaypi",
+        "lora": "\"Chayqaqa nisqamanmi, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpaq, allinpasqa kachkanpa"
+      },
+      {
+        "en": "Dr. Ehud Ur, professor of medicine at Dalhousie University in Halifax, Nova Scotia and chair of the clinical and scientific division of the Canadian Diabetes Association cautioned that the research is still in its early days.",
+        "ref": "Dr. Ehud Ur, yachachiq hanpimanta Dalhosie suntur wasipi, nueva escocia llaqtapi inallataq umalliq Division Clinica nisqamanta willarikamun kuskiyqa chayraqmi qallariyninpi kachkan nispa.",
+        "base": "**Ayacucho Quechua Translation:**\n\nDr. Ehud Ur, Dalhousie University, Halifax, Nova Scotia llaqta yachaykuna simikuna kusisqisqa, kusisqisqa kawsaypacha riqsisqisqa qhapaq llaqta, Kanada Diabetes Association klinika yachaypacha riqsisqisqa qhapaq llaqta, yachaykunaqa yachaypacha riqsisqisqa, chaymi yachaykunaqa yachaypacha riqsisqisqa,",
+        "lora": "Dr. Ehud Ur, mipurqanchispaq yachachaypaq kawsaypi Dalhousie University nisqakunapi Halifax, Nova Scotia nisqakunapi, Diabetes Association nisqakunapi, Division Clinical y Scientific nisqakunapi, mañayninpi kawsaypaqmi kachkanpaq, nisqakunapi.<end_of_turn>"
+      },
+      {
+        "en": "Like some other experts, he is skeptical about whether diabetes can be cured, noting that these findings have no relevance to people who already have Type 1 diabetes.",
+        "ref": "Huk allin riqsiqkuna hinas, payqa tapupakunsi diabetes unquyta hampinamanta chaynallataq nin tarisqankumanta mana llasayniyuqchu unquqkunapaqña diabetes tipo 1 nisqankuwanqa.",
+        "base": "**Ayacucho Quechua Translation:**\n\n*Kunanqa, ¿yachaykuna allinmi, yachaykuna allinmi?* (This is a very complex sentence for direct, natural translation, as Quechua structure differs significantly. A more contextually accurate, though slightly longer, rendering is provided below.)\n\n**More Contextually Accurate Translation:**\n\n*Yachaykuna allinmi, yachaykuna allinmi?* (This is a very rough placeholder. A proper translation requires deep knowledge of the specific dialect and context.)\n\n**Recommended Translation (Focusing",
+        "lora": "Allinpas paykunaqa, nisqakunapaqmi, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, allinpas paykunaqa, all"
+      }
+    ],
+    "chr_Cher": [
+      {
+        "en": "And his tail draweth the third part of the stars of heaven, and did cast them to the earth: and the dragon standeth before the woman that is about to be delivered, that when she is delivered he may devour her child.",
+        "ref": "ᎦᏂᏓᏛᏃ ᏃᏈᏏ ᎦᎸᎳᏗ ᎠᏂᎧᎸ ᏦᎢ ᎢᏗᎦᏛᎯ ᎨᏒ ᎾᏍᎩ ᏌᏉ ᎢᏳᏪᏨᎯ ᏕᎤ-ᏎᏒᏔᏅᎩ, ᎠᎴ ᎦᏙᎯ ᏫᏚᏗᏅᏒᎩ; ᎢᎾᏛᏃ ᎢᎬᏱᏗᏢ ᎤᎴᏅᎩ ᎠᎨᏴ ᏄᏛᏅᎢ, ᎾᏍᎩ ᎤᎾᏄᎪᏫᏏᏕᎾ [ᎠᏲᎵ] ᎾᏍᎩ ᎤᏕᏃᏅᎯᏉ ᎤᏪᏯᎣᎲᏍᏗᏱ ᎤᏰᎸᏒᎩ.",
+        "base": "ᎠᏂᎦᏔᎦ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁ",
+        "lora": "ᎠᏂᎦᏔᎭ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎢᎦ ᏂᎦᏪᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎢᎦ ᏂᎦᏪᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎢᎦ ᏂᎦᏪᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎢᎦ ᏂᎦᏪᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎢᎦ ᏂᎦᏪᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎢᎦ ᏂᎦᏪᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏤ"
+      },
+      {
+        "en": "He saw the three boys cut down while he was still fumbling.",
+        "ref": "ᏚᎪᎮ ᏦᎢ ᎢᏯᏂ ᎠᏂᏧᏣ ᎨᏥᎢᎲ, ᎠᏁᎸᏗᏍᎩ ᎤᎵᏒᏗ ᎦᎶᏇ.",
+        "base": "ᎠᏂᎨᏳᏥ თუთᏂᎨᏥ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁᎳᎩ ᎤᏁ",
+        "lora": "ᎠᏂᏲᎲᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰᎸᎡᎢ ᎤᏂᏰ"
+      },
+      {
+        "en": "And Jesus perceiving it withdrew from thence: and many followed him; and he healed them all,",
+        "ref": "ᎠᏎᏃ ᏥᏌ ᎤᏙᎴᎰᏒ ᎾᎿᎤᏓᏅᏒᎩ; ᎤᏂᏣᏘᏃ ᎬᏩᏍᏓᏩᏛᏒᎩ; ᎠᎴ ᏂᎦᏛ ᏚᏅᏩᏅᎩ,",
+        "base": "ᎠᏂᎨᏳᎯ ᎤᏁᎳᎩ Ꭴཤེས་པའི་ ժᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾᎾ",
+        "lora": "ᎠᏂᎦᏔᎭ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎤᎶᎩᏎᎢ; ᎠᎴ ᎤᏂᎷᏤᎸᎩ ᎤᎾᏓᏅᏛᎢ; ᎠᎴ ᎤᏂ ᎤᎵᏍᏓᏁᎸᎩ ᏂᎦᏛ, ᎠᎴ ᎤᏂ ᎤᎵᏍᏓᏁᎸᎩ ᏂᎦᏛ, ᎠᎴ ᎤᏂ ᎤᎵᏍᏓᏁᎸᎩ ᏂᎦᏛ, ᎠᎴ ᎤᏂ ᎤᎵᏍᏓᏁᎸᎩ ᏂᎦᏛ, ᎠᎴ ᎤᏂ ᎤᎵᏍᏓᏁᎸᎩ ᏂᎦᏛ"
+      }
+    ]
+  },
+  "aggregate": {
+    "base_bleu": 1.88,
+    "lora_bleu": 2.33,
+    "base_chrf": 20.44,
+    "lora_chrf": 21.22,
+    "d_bleu": 0.46,
+    "d_chrf": 0.78
+  }
+}

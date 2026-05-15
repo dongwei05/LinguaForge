@@ -39,6 +39,9 @@ notebooks/auto_run/corpus_stats.md
 # Keep the Listen kernel results JSON for the writeup reference.
 !notebooks/auto_run_listen/out_v3/
 !notebooks/auto_run_listen/out_v3/listen_results.json
+# Space static deps (mirror of eval+listen JSON, served by Gradio)
+!space/eval_results.json
+!space/listen_results.json
 
 # IDE
 .vscode/
